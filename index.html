@@ -8,171 +8,130 @@
 </head>
 <body>
 <article>
-<h1 id="keep-a-changelog">
-<a name="keep-a-changelog" class="anchor" href="#keep-a-changelog"></a>
-Keep a CHANGELOG
+<h1 id="mantenha-um-changelog">
+<a name="mantenha-um-changelog" class="anchor" href="#mantenha-um-changelog"></a>
+Mantenha um CHANGELOG
 </h1>
-<h2 id="don-t-let-your-friends-dump-git-logs-into-changelogs-">
-<a name="don-t-let-your-friends-dump-git-logs-into-changelogs-" class="anchor" href="#don-t-let-your-friends-dump-git-logs-into-changelogs-"></a>
-Don’t let your friends dump git logs into CHANGELOGs™
+<h2 id="n-o-deixe-seus-amigos-despejar-logs-de-commits-em-changelogs-">
+<a name="n-o-deixe-seus-amigos-despejar-logs-de-commits-em-changelogs-" class="anchor" href="#n-o-deixe-seus-amigos-despejar-logs-de-commits-em-changelogs-"></a>
+Não deixe seus amigos despejar logs de commits em CHANGELOGs™
 </h2>
-<h3 id="what-s-a-change-log-">
-<a name="what-s-a-change-log-" class="anchor" href="#what-s-a-change-log-"></a>
-What’s a change log?
+<h3 id="o-que-um-em-change-log-em-">
+<a name="o-que-um-em-change-log-em-" class="anchor" href="#o-que-um-em-change-log-em-"></a>
+O que é um <em>change log</em>?
 </h3>
-<p>A change log is a file which contains a curated, chronologically ordered
-list of notable changes for each version of an open source project.</p>
+<p>Um <em>change log</em> é um arquivo que contém uma lista selecionada, ordenada cronologicamente de mudanças significativas para cada versão de um projeto open source.</p>
 <p><a href="CHANGELOG.md" title="An example of a CHANGELOG file."><iframe src="CHANGELOG.md" width="570" height="350" seamless="seamless" style="border: 1px solid #aaa; padding: 1em; margin: 0 0.5em;"></iframe></a></p>
-<h3 id="what-s-the-point-of-a-change-log-">
-<a name="what-s-the-point-of-a-change-log-" class="anchor" href="#what-s-the-point-of-a-change-log-"></a>
-What’s the point of a change log?
+<h3 id="para-que-serve-um-em-change-log-em-">
+<a name="para-que-serve-um-em-change-log-em-" class="anchor" href="#para-que-serve-um-em-change-log-em-"></a>
+Para que serve um <em>change log</em>?
 </h3>
-<p>To make it easier for users and contributors to see precisely what
-notable changes have been made between each release (or version) of the project.</p>
-<h3 id="why-should-i-care-">
-<a name="why-should-i-care-" class="anchor" href="#why-should-i-care-"></a>
-Why should I care?
+<p>Para facilitar para os usuários e contribuidores verem precisamente quais mudanças significativas foram realizadas entre cada versão publicada.</p>
+<h3 id="por-qu-eu-deveria-me-importar-">
+<a name="por-qu-eu-deveria-me-importar-" class="anchor" href="#por-qu-eu-deveria-me-importar-"></a>
+Por quê eu deveria me importar?
 </h3>
-<p>Because software tools are for people. If you don’t care, why are
-you contributing to open source? Surely, there must be a kernel (ha!)
-of care somewhere in that lovely little brain of yours.</p>
-<p>I <a href="http://5by5.tv/changelog/127">talked with Adam Stacoviak and Jerod Santo on The Changelog</a>
-(fitting, right?) podcast about why open source maintainers and
-contributors should care, and the motivations behind this project.
-If you can spare the time (1:06), it’s a good listen.</p>
-<h3 id="what-makes-a-good-change-log-">
-<a name="what-makes-a-good-change-log-" class="anchor" href="#what-makes-a-good-change-log-"></a>
-What makes a good change log?
+<p>Porque softwares são feitos para pessoas. Se você não liga, porque está contribuindo a projetos open source? Certamente deve haver um fundo de carinho em algum lugar dessa sua cabeçinha.</p>
+<p>Eu <a href="http://5by5.tv/changelog/127">conversei com Adam Stacoviak e Jerod Santo no podcast do The Changelog</a> (faz sentido, hein?) sobre o por quê mantenedores e contribuidores open source devem se importar, e as motivações por trás deste projeto.
+Se você tem o tempo (1:06), é um bom programa.</p>
+<h3 id="o-que-faz-um-em-change-log-em-ser-bom-">
+<a name="o-que-faz-um-em-change-log-em-ser-bom-" class="anchor" href="#o-que-faz-um-em-change-log-em-ser-bom-"></a>
+O que faz um <em>change log</em> ser bom?
 </h3>
-<p>I’m glad you asked.</p>
-<p>A good change log sticks to these principles:</p>
+<p>Que bom que perguntou.</p>
+<p>Um bom <em>change log</em> não foge desses princípios:</p>
 <ul>
-<li>It’s made for humans, not machines, so legibility is crucial.</li>
-<li>Easy to link to any section (hence Markdown over plain text).</li>
-<li>One sub-section per version.</li>
-<li>List releases in reverse-chronological order (newest on top).</li>
-<li>Write all dates in <code>YYYY-MM-DD</code> format. (Example: <code>2012-06-02</code> for <code>June 2nd, 2012</code>.) It’s international, <a href="http://xkcd.com/1179/">sensible</a>, and language-independent.</li>
-<li>Explicitly mention whether the project follows <a href="http://semver.org">Semantic Versioning</a>.</li>
-<li>Each version should:
+<li>É feito para seres humanos, não máquinas, então legibilidade é crucial.</li>
+<li>Ser fácil de referenciar (<em>linkar</em>) qualquer seção (por isso Markdown ao invés de puro texto).</li>
+<li>Uma sub-seção por versão.</li>
+<li>Lista as versões publicadas em ordem cronológica decrescente (mais novo em cima).</li>
+<li>Escreva todas as datas no formato <code>AAAA-MM-DD</code>. (Exemplo: <code>2012-06-02</code> para <code>2 de Junho de 2012</code>.) É internacional, <a href="http://xkcd.com/1179/">sensato</a>, e independente de língua.</li>
+<li>Explicite se o projeto segue <a href="http://semver.org">Versionamento Semântico</a>.</li>
+<li>Cada versão deve:
 <ul>
-<li>List its release date in the above format.</li>
-<li>Group changes to describe their impact on the project, as follows:</li>
-<li><code>Added</code> for new features.</li>
-<li><code>Changed</code> for changes in existing functionality.</li>
-<li><code>Deprecated</code> for once-stable features removed in upcoming releases.</li>
-<li><code>Removed</code> for deprecated features removed in this release.</li>
-<li><code>Fixed</code> for any bug fixes.</li>
-<li><code>Security</code> to invite users to upgrade in case of vulnerabilities.</li>
+<li>Listar sua data de publicação no formato acima.</li>
+<li>Agrupar mudanças descrevendo seus impactos no projeto, como segue:</li>
+<li><code>Adicionado</code> para novas funcionalidades.</li>
+<li><code>Modificado</code> para mudanças em funcionalidades existentes.</li>
+<li><code>Obsoleto</code> para funcionalidades uma vez estáveis removidas das próximas publicações.</li>
+<li><code>Removido</code> para funcionalidades removidas desta versão.</li>
+<li><code>Corrigido</code> para qualquer correção de bug.</li>
+<li><code>Segurança</code> para convidar usuários a atualizar em caso de vulnerabilidades.</li>
 </ul></li>
 </ul>
-<h3 id="how-can-i-minimize-the-effort-required-">
-<a name="how-can-i-minimize-the-effort-required-" class="anchor" href="#how-can-i-minimize-the-effort-required-"></a>
-How can I minimize the effort required?
+<h3 id="como-eu-posso-minimizar-o-esfor-o-exigido-">
+<a name="como-eu-posso-minimizar-o-esfor-o-exigido-" class="anchor" href="#como-eu-posso-minimizar-o-esfor-o-exigido-"></a>
+Como eu posso minimizar o esforço exigido?
 </h3>
-<p>Always have an <code>&quot;Unreleased&quot;</code> section at the top for keeping track of any
-changes.</p>
-<p>This serves two purposes:</p>
+<p>Mantenha sempre uma seção <code>Não publicado</code> no topo para manter o controle de quaisquer mudanças.</p>
+<p>Isso serve a dois propósitos:</p>
 <ul>
-<li>People can see what changes they might expect in upcoming releases</li>
-<li>At release time, you just have to change <code>&quot;Unreleased&quot;</code> to the version number
-and add a new <code>&quot;Unreleased&quot;</code> header at the top.</li>
+<li>As pessoas podem ver quais mudanças elas podem esperar em publicações futuras.</li>
+<li>No momento da publicação, você tem que somente mudar <code>Não publicado</code> para o número de versão e adicionar um novo cabeçalho <code>Não publicado</code> no topo.</li>
 </ul>
-<h3 id="what-makes-unicorns-cry-">
-<a name="what-makes-unicorns-cry-" class="anchor" href="#what-makes-unicorns-cry-"></a>
-What makes unicorns cry?
+<h3 id="o-que-faz-os-unic-rnios-chorarem-">
+<a name="o-que-faz-os-unic-rnios-chorarem-" class="anchor" href="#o-que-faz-os-unic-rnios-chorarem-"></a>
+O que faz os unicórnios chorarem?
 </h3>
-<p>Alright…let’s get into it.</p>
+<p>Tudo bem...vamos lá.</p>
 <ul>
-<li><strong>Dumping a diff of commit logs.</strong> Just don’t do that, you’re helping nobody.</li>
-<li><strong>Not emphasizing deprecations.</strong> When people upgrade from one version to
-another, it should be painfully clear when something will break.</li>
-<li><strong>Dates in region-specific formats.</strong> In the U.S., people put the month first
-(&quot;06-02-2012&quot; for June 2nd, 2012, which makes <em>no</em> sense), while many people
-in the rest of the world write a robotic-looking &quot;2 June 2012&quot;, yet pronounce 
-it differently. &quot;2012-06-02&quot; works logically from largest to smallest, doesn&#39;t 
-overlap in ambiguous ways with other date formats, and is an
-<a href="http://www.iso.org/iso/home/standards/iso8601.htm">ISO standard</a>. Thus, it
-is the recommended date format for change logs.</li>
+<li><strong>Despejar logs de commits.</strong> Simplesmente não faça isso, você não está ajudando ninguém.</li>
+<li><strong>Não dar ênfase nas descontinuações.</strong> Quando as pessoas atualizam de uma versão para outra, deve ser incrivelmente claro quando algo irá quebrar.</li>
+<li><strong>Datas em formatos específicos de uma região.</strong> Nos Estados Unidos, as pessoas colocam o mês primeiro (&quot;06-02-2012&quot; para 2 de Junho de 2012, o que <em>não</em> faz sentido), enquanto muitos no resto do mundo escrevem em aspecto robótico &quot;2 Junho 2012&quot;, e mesmo assim leem de forma diferente. &quot;2012-06-02&quot; funciona de maneira lógica do maior para o menor, não sobrescreve de maneira ambígua outros formatos, e é um <a href="http://www.iso.org/iso/home/standards/iso8601.htm">padrão ISO</a>. Portanto, é o formato recomendado para <em>change logs</em>.</li>
 </ul>
-<p>There’s more. Help me collect those unicorn tears by
-<a href="https://github.com/olivierlacan/keep-a-changelog/issues">opening an issue</a>
-or a pull request.</p>
-<h3 id="is-there-a-standard-change-log-format-">
-<a name="is-there-a-standard-change-log-format-" class="anchor" href="#is-there-a-standard-change-log-format-"></a>
-Is there a standard change log format?
+<p>Tem mais. Ajude me a coletar essas lágrimas de unicórnio <a href="https://github.com/olivierlacan/keep-a-changelog/issues">abrindo uma issue</a> ou um pull request.</p>
+<h3 id="existe-um-padr-o-de-formato-de-em-change-log-em-">
+<a name="existe-um-padr-o-de-formato-de-em-change-log-em-" class="anchor" href="#existe-um-padr-o-de-formato-de-em-change-log-em-"></a>
+Existe um padrão de formato de <em>change log</em>?
 </h3>
-<p>Sadly, no. Calm down. I know you&#39;re furiously rushing to find that link
-to the GNU change log style guide, or the two-paragraph GNU NEWS file
-&quot;guideline&quot;. The GNU style guide is a nice start but it is naive.
-There&#39;s nothing wrong with being naive but when people need
-guidance it&#39;s rarely very helpful. Especially when there are many
-situations and edge cases to deal with.</p>
-<p>This project <a href="./CHANGELOG.md">contains what I hope will become a better CHANGELOG file convention</a>
-for all open source projects. Can the open source community learn from
-its mistake and not act as if the ten commandments were written long ago
-and got everything right? Alright. So please take a look around and
-remember that <a href="https://github.com/olivierlacan/keep-a-changelog/issues">discussions and suggestions for improvements are welcome</a>!</p>
-<h3 id="what-should-the-change-log-file-be-named-">
-<a name="what-should-the-change-log-file-be-named-" class="anchor" href="#what-should-the-change-log-file-be-named-"></a>
-What should the change log file be named?
+<p>Infelizmente, não. Calma. Eu sei que você está indo impetuosamente achar aquele link do guia de estilo de <em>change log</em> GNU, ou o arquivo &quot;guideline&quot; de dois paragráfos GNU NEWS. O estilo GNU é um bom começo mas é ingênuo. Não há nada de errado em ser ingênuo mas quando as pessoas precisam de orientação raramente ajuda. Especialmente quando existem muitas situações excepcionais para lidar.</p>
+<p>Este projeto <a href="./CHANGELOG.md">contém o que eu espero se tornar um melhor padrão de arquivo CHANGELOG</a> para todos projetos open source. Pode a comunidade open source aprender com seus erros e não agir como se os dez mandamentos foram escritos a muito tempo atrás e estavam inteiramente certos? Tudo bem. Então por favor dê um olhada e lembre que <a href="https://github.com/olivierlacan/keep-a-changelog/issues">discussões e sugestões de melhorias são bem-vindas</a>!</p>
+<h3 id="qual-deve-ser-o-nome-do-arquivo-em-change-log-em-">
+<a name="qual-deve-ser-o-nome-do-arquivo-em-change-log-em-" class="anchor" href="#qual-deve-ser-o-nome-do-arquivo-em-change-log-em-"></a>
+Qual deve ser o nome do arquivo <em>change log</em>?
 </h3>
-<p>Well, if you can’t tell from the example above, <code>CHANGELOG.md</code> is the
-best convention so far.</p>
-<p>Some projects also use <code>HISTORY.txt</code>, <code>HISTORY.md</code>, <code>History.md</code>, <code>NEWS.txt</code>,
-<code>NEWS.md</code>, <code>News.txt</code>, <code>RELEASES.txt</code>, <code>RELEASE.md</code>, <code>releases.md</code>, etc.</p>
-<p>It’s a mess. All these names only makes it harder for people to find it.</p>
-<h3 id="why-can-t-people-just-use-a-code-git-log-code-diff-">
-<a name="why-can-t-people-just-use-a-code-git-log-code-diff-" class="anchor" href="#why-can-t-people-just-use-a-code-git-log-code-diff-"></a>
-Why can’t people just use a <code>git log</code> diff?
+<p>Bom, se você não notou no exemplo acima, <code>CHANGELOG.md</code> é a melhor padrão até agora.</p>
+<p>Alguns outros projetos também utilizam <code>HISTORY.txt</code>, <code>HISTORY.md</code>, <code>History.md</code>, <code>NEWS.txt</code>, <code>NEWS.md</code>, <code>News.txt</code>, <code>RELEASES.txt</code>, <code>RELEASE.md</code>, <code>releases.md</code>, etc.</p>
+<p>É uma bagunça. Todos esses nome só dificultam as pessoas acharem.</p>
+<h3 id="por-qu-as-pessoas-n-o-podem-simplesmente-utilizar-code-git-log-code-">
+<a name="por-qu-as-pessoas-n-o-podem-simplesmente-utilizar-code-git-log-code-" class="anchor" href="#por-qu-as-pessoas-n-o-podem-simplesmente-utilizar-code-git-log-code-"></a>
+Por quê as pessoas não podem simplesmente utilizar <code>git log</code>?
 </h3>
-<p>Because log diffs are full of noise. Can we really expect every single
-commit in an open source project to be meaningful and self-explanatory?
-That seems like a pipe dream.</p>
-<h3 id="can-change-logs-be-automatically-parsed-">
-<a name="can-change-logs-be-automatically-parsed-" class="anchor" href="#can-change-logs-be-automatically-parsed-"></a>
-Can change logs be automatically parsed?
+<p>Porque logs de commit são cheios de distrações. Podemos realmente esperar que cada commit do projeto seja significativo e auto-explicativo? Só em sonho.</p>
+<h3 id="podem-os-em-change-logs-em-ser-automaticamente-interpretados-">
+<a name="podem-os-em-change-logs-em-ser-automaticamente-interpretados-" class="anchor" href="#podem-os-em-change-logs-em-ser-automaticamente-interpretados-"></a>
+Podem os <em>change logs</em> ser automaticamente interpretados?
 </h3>
-<p>It’s difficult, because people follow wildly different formats and file names.</p>
-<p><a href="https://github.com/tech-angels/vandamme/">Vandamme</a> is a Ruby gem
-created by the <a href="http://gemnasium.com">Gemnasium</a> team and which parses
-many (but not all) open source project change logs.</p>
-<h3 id="why-do-you-alternate-between-spelling-it-quot-changelog-quot-and-quot-change-log-quot-">
-<a name="why-do-you-alternate-between-spelling-it-quot-changelog-quot-and-quot-change-log-quot-" class="anchor" href="#why-do-you-alternate-between-spelling-it-quot-changelog-quot-and-quot-change-log-quot-"></a>
-Why do you alternate between spelling it &quot;CHANGELOG&quot; and &quot;change log&quot;?
+<p>É difícil, por que as pessoas seguem formatos e nomes de arquivos radicalmente diferentes.</p>
+<p><a href="https://github.com/tech-angels/vandamme/">Vandamme</a> é uma gem criada pelo time <a href="http://gemnasium.com">Gemnasium</a> que interpreta muitos (mas não todos) <em>change logs</em> de projetos open source.</p>
+<h3 id="por-que-voc-alterna-entre-as-grafias-quot-changelog-quot-e-quot-change-log-quot-">
+<a name="por-que-voc-alterna-entre-as-grafias-quot-changelog-quot-e-quot-change-log-quot-" class="anchor" href="#por-que-voc-alterna-entre-as-grafias-quot-changelog-quot-e-quot-change-log-quot-"></a>
+Por que você alterna entre as grafias &quot;CHANGELOG&quot; e &quot;change log&quot;?
 </h3>
-<p>&quot;CHANGELOG&quot; is the name of the file itself. It&#39;s a bit shouty but it&#39;s a
-historical convention followed by many open source projects. Other
-examples of similar files include <a href="README.md"><code>README</code></a>, <a href="LICENSE"><code>LICENSE</code></a>,
-and <a href="CONTRIBUTING.md"><code>CONTRIBUTING</code></a>.</p>
-<p>The uppercase naming (which in old operating systems made these files stick
-to the top) is used to draw attention to them. Since they&#39;re important
-metadata about the project, they could be useful to anyone intending to use
-or contribute to it, much like <a href="http://shields.io">open source project badges</a>.</p>
-<p>When I refer to a &quot;change log&quot;, I&#39;m talking about the function of this
-file: to log changes.</p>
-<h3 id="what-about-yanked-releases-">
-<a name="what-about-yanked-releases-" class="anchor" href="#what-about-yanked-releases-"></a>
-What about yanked releases?
+<p>&quot;CHANGELOG&quot; é o nome do arquivo em si. É um pouco chamativo mas é uma convenção histórica seguida por muitos projetos open source. Outros exemplos similares de arquivo incluem <a href="README.md"><code>README</code></a>, <a href="LICENSE"><code>LICENSE</code></a>, e <a href="CONTRIBUTING.md"><code>CONTRIBUTING</code></a>.</p>
+<p>O nome em letras maiúsculas (o que em sistemas operacionais antigos faziam estes arquivos serem mantidos no topo) é utilizado para chamar atenção a eles. Já que eles são importante metadados sobre o projeto, eles podem ser úteis a qualquer um pretendendo usar ou contribuir com ele, assim como os <a href="http://shields.io">as <em>badges</em> de projeto open source</a>.</p>
+<p>Quando eu me refiro a &quot;<em>change log</em>&quot;, eu estou falando sobre a função deste arquivo: listar mudanças.</p>
+<h3 id="e-sobre-as-publica-es-removidas-">
+<a name="e-sobre-as-publica-es-removidas-" class="anchor" href="#e-sobre-as-publica-es-removidas-"></a>
+E sobre as publicações removidas?
 </h3>
-<p>Yanked releases are versions that had to be pulled because of a serious
-bug or security issue. Often these versions don&#39;t even appear in change
-logs. They should. This is how you should display them:</p>
-<p><code>## 0.0.5 - 2014-12-13 [YANKED]</code></p>
-<p>The <code>[YANKED]</code> tag is loud for a reason. It&#39;s important for people to
-notice it. Since it&#39;s surrounded by brackets it&#39;s also easier to parse
-programmatically.</p>
-<h3 id="how-can-i-contribute-">
-<a name="how-can-i-contribute-" class="anchor" href="#how-can-i-contribute-"></a>
-How can I contribute?
+<p>Publicações removidas são versões que tiveram que ser removidas devido a um sério bug ou problema de segurança. Com frequência essas versões sequer aparecem em <em>change logs</em>. Deveriam. É assim que você deve exibi-las:</p>
+<p><code>## 0.0.5 - 2014-12-13 [REMOVIDO]</code></p>
+<p>A tag <code>[REMOVIDO]</code> é chamativa por uma razão. É importante que as pessoas a notem. E já que é cercada por colchetes é mais fácil detectá-la programaticamente.</p>
+<h3 id="como-eu-posso-contribuir-">
+<a name="como-eu-posso-contribuir-" class="anchor" href="#como-eu-posso-contribuir-"></a>
+Como eu posso contribuir?
 </h3>
-<p>This document is not the <strong>truth</strong>; it’s my carefully considered
-opinion, along with information and examples I gathered.
-Although I provide an actual <a href="./CHANGELOG.md">CHANGELOG</a> on <a href="https://github.com/olivierlacan/keep-a-changelog">the GitHub repo</a>,
-I have purposefully not created a proper <em>release</em> or clear list of rules
-to follow (as <a href="http://semver.org">SemVer.org</a> does, for instance).</p>
-<p>This is because I want our community to reach a consensus. I believe the
-discussion is as important as the end result.</p>
-<p>So please <a href="https://github.com/olivierlacan/keep-a-changelog"><strong>pitch in</strong></a>.</p>
+<p>Este documento não é <strong>a verdade</strong>; é minha cuidadosa opinião, junto com as informações e exemplos que reuni. Embora eu tenha providenciado um <a href="./CHANGELOG.md">CHANGELOG</a> no <a href="https://github.com/olivierlacan/keep-a-changelog">repositório no GitHub</a>, eu não criei de propósito uma lista clara de regras a serem seguidas (como o <a href="http://semver.org">SemVer.org</a> faz, por exemplo).</p>
+<p>Fiz isso porque eu gostaria que nossa comunidade chegasse a um consenso. Eu acredito que a discussão é tão importante quanto o resultado final.</p>
+<p>Então por favor <a href="https://github.com/olivierlacan/keep-a-changelog"><strong>entre em campo</strong></a>.</p>
+<h3 id="isto-uma-tradu-o">
+<a name="isto-uma-tradu-o" class="anchor" href="#isto-uma-tradu-o"></a>
+Isto é uma tradução
+</h3>
+<p><em><a href="https://github.com/tallesl">Tradutor</a> falando</em>.</p>
+<p>Isto é uma tradução de <a href="http://keepachangelog.com/">keepachangelog.com</a>.</p>
+<p>Para contribuir com a discussão e a formulação do documento utilize o <a href="https://github.com/olivierlacan/keep-a-changelog">repositório original</a>. Para contribuir com a tradução utilize <a href="https://github.com/tallesl/keep-a-changelog">este fork</a>.</p>
 <footer class="clearfix">
 <p class="license">This project is <a href="http://choosealicense.com/licenses/mit/">MIT Licensed</a>.</p>
 <p class="about"><a href="https://github.com/olivierlacan/keep-a-changelog/">Typed</a> with trepidation by <a href="http://olivierlacan.com">Olivier Lacan</a> from <a href="http://codeschool.com">Code School</a>.</p>
