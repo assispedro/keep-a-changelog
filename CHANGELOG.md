@@ -1,76 +1,67 @@
 # Change Log
-All notable changes to this project will be documented in this file.
-This project adheres to [Semantic Versioning](http://semver.org/).
+Todas mudanças significativas do projeto serão documentadas neste arquivo. O projeto segue o [Versionamento Semântico](http://semver.org/lang/pt-BR/).
 
-## [Unreleased][unreleased]
+## [Não publicado][nao-publicado]
 
 ## [0.0.8] - 2015-02-17
-### Changed
-- Update year to match in every README example.
-- Reluctantly stop making fun of Brits only, since most of the world
-  writes dates in a strange way.
+### Modificado
+- Atualizado ano para casar com os exemplos do README.
+- Relutantemente parei de zombar somente os Britânicos, já que a maioria do mundo escreve datas de um jeito estranho.
 
-### Fixed
-- Fix typos in recent README changes.
-- Update outdated unreleased diff link.
+### Corrigido
+- Corrigido erros de digitação em mudanças recentes do README.
+- Atualizado link Não publicado.
 
 ## [0.0.7] - 2015-02-16
-### Added
-- Link, and make it obvious that date format is ISO 8601.
+### Adicionado
+- Adicionado link, e explicitado que o formato de data é ISO 8601.
 
-### Changed
-- Clarified the section on "Is there a standard change log format?".
+### Modificado
+- Clarificada a seção "Existe algum padrão de formato de change log?".
 
-### Fixed
-- Fix Markdown links to tag comparison URL with footnote-style links.
+### Corrigido
+- Corrigido links Markdown de comparação de tags com links de rodapé.
 
 ## [0.0.6] - 2014-12-12
-### Added
-- README section on "yanked" releases.
+### Adicionado
+- Seção no README sobre versões "removido".
 
 ## [0.0.5] - 2014-08-09
-### Added
-- Markdown links to version tags on release headings.
-- Unreleased section to gather unreleased changes and encourage note
-keeping prior to releases.
+### Adicionado
+- Links para as tags nos títulos de publicações.
+- Seção Não publicado para reunir mudanças não publicadas e encorajar a tomar nota antes das publicações.
 
 ## [0.0.4] - 2014-08-09
-### Added
-- Better explanation of the difference between the file ("CHANGELOG")
-and its function "the change log".
+### Adicionado
+- Melhor explicação da diferença entre o arquivo ("CHANGELOG") e sua função "o change log".
 
-### Changed
-- Refer to a "change log" instead of a "CHANGELOG" throughout the site
-to differentiate between the file and the purpose of the file — the
-logging of changes.
+### Modificado
+- Mencionado um "change log" ao invés de um "CHANGELOG" ao longo do site para diferenciar entre o arquivo e o propósito do arquivo —  o log das mudanças.
 
-### Removed
-- Remove empty sections from CHANGELOG, they occupy too much space and
-create too much noise in the file. People will have to assume that the
-missing sections were intentionally left out because they contained no
-notable changes.
+### Removido
+- Removida seções vazias do CHANGELOG, elas ocupam muito espaço e criam distração no arquivo. As pessoas vão ter que assumir que as seções faltantes foram intencionalmente deixadas de fora porque não continham mudanças significativas.
 
 ## [0.0.3] - 2014-08-09
-### Added
-- "Why should I care?" section mentioning The Changelog podcast.
+### Adicionado
+- Seção "Por quê eu deveria me importar?" mencionando o podcast The Changelog.
 
 ## [0.0.2] - 2014-07-10
-### Added
-- Explanation of the recommended reverse chronological release ordering.
+### Adicionado
+- Explicação da recomendação da ordenação cronológica decrescente de publicações.
 
 ## 0.0.1 - 2014-05-31
-### Added
-- This CHANGELOG file to hopefully serve as an evolving example of a standardized open source project CHANGELOG.
-- CNAME file to enable GitHub Pages custom domain
-- README now contains answers to common questions about CHANGELOGs
-- Good examples and basic guidelines, including proper date formatting.
-- Counter-examples: "What makes unicorns cry?"
+### Adicionado
+- Este arquivo CHANGELOG para servir como um exemplo em evolução de um CHANGELOG padronizado de projeto open source.
+- Arquivo CNAME para habilitar domínio próprio do GitHub Pages.
+- O README agora possui respostas para perguntas comuns sobre CHANGELOGs.
+- Exemplos bons e diretrizes básicas, incluindo formatação de data apropriada.
+- Contra-exemplos: "O que faz os unicórnios chorarem?"
 
-[unreleased]: https://github.com/olivierlacan/keep-a-changelog/compare/v0.0.8...HEAD
-[0.0.8]: https://github.com/olivierlacan/keep-a-changelog/compare/v0.0.7...v0.0.8
-[0.0.7]: https://github.com/olivierlacan/keep-a-changelog/compare/v0.0.6...v0.0.7
-[0.0.6]: https://github.com/olivierlacan/keep-a-changelog/compare/v0.0.5...v0.0.6
-[0.0.5]: https://github.com/olivierlacan/keep-a-changelog/compare/v0.0.4...v0.0.5
-[0.0.4]: https://github.com/olivierlacan/keep-a-changelog/compare/v0.0.3...v0.0.4
-[0.0.3]: https://github.com/olivierlacan/keep-a-changelog/compare/v0.0.2...v0.0.3
-[0.0.2]: https://github.com/olivierlacan/keep-a-changelog/compare/v0.0.1...v0.0.2
+[nao-publicado]: https://github.com/tallesl/keep-a-changelog/compare/v0.0.8...HEAD
+[0.0.8]: https://github.com/tallesl/keep-a-changelog/compare/v0.0.7...v0.0.8
+[0.0.7]: https://github.com/tallesl/keep-a-changelog/compare/v0.0.6...v0.0.7
+[0.0.6]: https://github.com/tallesl/keep-a-changelog/compare/v0.0.5...v0.0.6
+[0.0.5]: https://github.com/tallesl/keep-a-changelog/compare/v0.0.4...v0.0.5
+[0.0.4]: https://github.com/tallesl/keep-a-changelog/compare/v0.0.3...v0.0.4
+[0.0.3]: https://github.com/tallesl/keep-a-changelog/compare/v0.0.2...v0.0.3
+[0.0.2]: https://github.com/tallesl/keep-a-changelog/compare/v0.0.1...v0.0.2

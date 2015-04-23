@@ -1,14 +1,4 @@
-Hi there,
+Olá,
 
-Please open a pull request with any suggestions you have regarding the
-example [CHANGELOG](CHANGELOG.md) or the [README](README.md).
-
-
-Don't edit the [`index.html`](index.html) manually. Instead:
-
-1. make changes to [README](README.md) if necessary
-2. run [`generate.thor`](generate.thor) with `thor generate index`.
-3. add the `README.md` and `index.html` changes to a Pull Request.
-
-Tweaks, fixes and improvements to any of the [assets](assets/) are also
-quite welcome.
+Para contribuir com a tradução fique a vontade para abrir um [*pull request*](https://github.com/tallesl/keep-a-changelog/pulls).
+Já para contribuir com o projeto, por favor vá ao [repositório original](https://github.com/olivierlacan/keep-a-changelog/blob/gh-pages/CONTRIBUTING.md).

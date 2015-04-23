@@ -1,147 +1,107 @@
-# Keep a CHANGELOG
+# Mantenha um CHANGELOG
 
-## Don’t let your friends dump git logs into CHANGELOGs™
+## Não deixe seus amigos despejar logs git em CHANGELOGs™
 
-### What’s a change log?
-A change log is a file which contains a curated, chronologically ordered
-list of notable changes for each version of an open source project.
+### O que é um *change log*?
+Um *change log* é um arquivo que contém uma lista selecionada, ordenada cronologicamente de mudanças significativas para cada versão de um projeto open source.
 
 <a href="CHANGELOG.md" title="An example of a CHANGELOG file."><iframe src="CHANGELOG.md" width="570" height="350" seamless="seamless" style="border: 1px solid #aaa; padding: 1em; margin: 0 0.5em;"></iframe></a>
 
-### What’s the point of a change log?
-To make it easier for users and contributors to see precisely what
-notable changes have been made between each release (or version) of the project.
+### Para que serve um *change log*?
+Para facilitar para os usuários e contribuidores verem precisamente quais mudanças significativas foram realizadas entre cada versão publicada.
 
-### Why should I care?
-Because software tools are for people. If you don’t care, why are
-you contributing to open source? Surely, there must be a kernel (ha!)
-of care somewhere in that lovely little brain of yours.
+### Por quê eu deveria me importar?
+Porque softwares são feitos para pessoas. Se você não liga, porque está contribuindo a projetos open source? Certamente deve haver um fundo de carinho em algum lugar dessa sua cabeçinha.
 
-I [talked with Adam Stacoviak and Jerod Santo on The Changelog][thechangelog]
-(fitting, right?) podcast about why open source maintainers and
-contributors should care, and the motivations behind this project.
-If you can spare the time (1:06), it’s a good listen.
+Eu [conversei com Adam Stacoviak e Jerod Santo no podcast do The Changelog][thechangelog] (faz sentido, hein?) sobre o por quê mantenedores e contribuidores open source devem se importar, e as motivações por trás deste projeto.
+Se você tem o tempo (1:06), é um bom programa.
 
-### What makes a good change log?
-I’m glad you asked.
+### O que faz um *change log* ser bom?
+Que bom que perguntou.
 
-A good change log sticks to these principles:
+Um bom *change log* não foge desses princípios:
 
-- It’s made for humans, not machines, so legibility is crucial.
-- Easy to link to any section (hence Markdown over plain text).
-- One sub-section per version.
-- List releases in reverse-chronological order (newest on top).
-- Write all dates in `YYYY-MM-DD` format. (Example: `2012-06-02` for `June 2nd, 2012`.) It’s international, [sensible](http://xkcd.com/1179/), and language-independent.
-- Explicitly mention whether the project follows [Semantic Versioning][semver].
-- Each version should:
-  - List its release date in the above format.
-  - Group changes to describe their impact on the project, as follows:
-    - `Added` for new features.
-    - `Changed` for changes in existing functionality.
-    - `Deprecated` for once-stable features removed in upcoming releases.
-    - `Removed` for deprecated features removed in this release.
-    - `Fixed` for any bug fixes.
-    - `Security` to invite users to upgrade in case of vulnerabilities.
+- É feito para seres humanos, não máquinas, então legibilidade é crucial.
+- Ser fácil de referenciar (*linkar*) qualquer seção (por isso Markdown ao invés de puro texto).
+- Uma sub-seção por versão.
+- Lista as versões publicadas em ordem cronológica decrescente (mais novo em cima).
+- Escreva todas as datas no formato `AAAA-MM-DD`. (Exemplo: `2012-06-02` para `2 de Junho de 2012`.) É internacional, [sensato](http://xkcd.com/1179/), e independente de língua.
+- Explicite se o projeto segue [Versionamento Semântico][semver].
+- Cada versão deve:
+  - Listar sua data de publicação no formato acima.
+  - Agrupar mudanças descrevendo seus impactos no projeto, como segue:
+    - `Adicionado` para novas funcionalidades.
+    - `Modificado` para mudanças em funcionalidades existentes.
+    - `Obsoleto` para funcionalidades uma vez estáveis removidas das próximas publicações.
+    - `Removido` para funcionalidades removidas desta versão.
+    - `Corrigido` para qualquer correção de bug.
+    - `Segurança` para convidar usuários a atualizar em caso de vulnerabilidades.
 
-### How can I minimize the effort required?
-Always have an `"Unreleased"` section at the top for keeping track of any
-changes.
+### Como eu posso minimizar o esforço exigido?
+Mantenha sempre uma seção `Não publicado` no topo para manter o controle de quaisquer mudanças.
 
-This serves two purposes:
+Isso serve a dois propósitos:
 
-- People can see what changes they might expect in upcoming releases
-- At release time, you just have to change `"Unreleased"` to the version number
-  and add a new `"Unreleased"` header at the top.
+- As pessoas podem ver quais mudanças elas podem esperar em publicações futuras.
+- No momento da publicação, você tem que somente mudar `Não publicado` para o número de versão e adicionar um novo cabeçalho `Não publicado` no topo.
 
-### What makes unicorns cry?
-Alright…let’s get into it.
+### O que faz os unicórnios chorarem?
+Tudo bem...vamos lá.
 
-- **Dumping a diff of commit logs.** Just don’t do that, you’re helping nobody.
-- **Not emphasizing deprecations.** When people upgrade from one version to
-  another, it should be painfully clear when something will break.
-- **Dates in region-specific formats.** In the U.S., people put the month first
-  ("06-02-2012" for June 2nd, 2012, which makes *no* sense), while many people
-  in the rest of the world write a robotic-looking "2 June 2012", yet pronounce 
-  it differently. "2012-06-02" works logically from largest to smallest, doesn't 
-  overlap in ambiguous ways with other date formats, and is an
-  [ISO standard](http://www.iso.org/iso/home/standards/iso8601.htm). Thus, it
-  is the recommended date format for change logs.
+- **Despejar logs de commits.** Simplesmente não faça isso, você não está ajudando ninguém.
+- **Não dar ênfase nas descontinuações.** Quando as pessoas atualizam de uma versão para outra, deve ser incrivelmente claro quando algo irá quebrar.
+- **Datas em formatos específicos de uma região.** Nos Estados Unidos, as pessoas colocam o mês primeiro ("06-02-2012" para 2 de Junho de 2012, o que *não* faz sentido), enquanto muitos no resto do mundo escrevem em aspecto robótico "2 Junho 2012", e mesmo assim leem de forma diferente. "2012-06-02" funciona de maneira lógica do maior para o menor, não sobrescreve de maneira ambígua outros formatos, e é um [padrão ISO](http://www.iso.org/iso/home/standards/iso8601.htm). Portanto, é o formato recomendado para *change logs*.
 
-There’s more. Help me collect those unicorn tears by
-[opening an issue][issues]
-or a pull request.
+Tem mais. Ajude me a coletar essas lágrimas de unicórnio [abrindo uma issue][issues] ou um pull request.
 
-### Is there a standard change log format?
-Sadly, no. Calm down. I know you're furiously rushing to find that link
-to the GNU change log style guide, or the two-paragraph GNU NEWS file
-"guideline". The GNU style guide is a nice start but it is naive.
-There's nothing wrong with being naive but when people need
-guidance it's rarely very helpful. Especially when there are many
-situations and edge cases to deal with.
+### Existe um padrão de formato de *change log*?
+Infelizmente, não. Calma. Eu sei que você está indo impetuosamente achar aquele link do guia de estilo de *change log* GNU, ou o arquivo "guideline" de dois paragráfos GNU NEWS. O estilo GNU é um bom começo mas é ingênuo. Não há nada de errado em ser ingênuo mas quando as pessoas precisam de orientação raramente ajuda. Especialmente quando existem muitas situações excepcionais para lidar.
 
-This project [contains what I hope will become a better CHANGELOG file convention][CHANGELOG]
-for all open source projects. Can the open source community learn from
-its mistake and not act as if the ten commandments were written long ago
-and got everything right? Alright. So please take a look around and
-remember that [discussions and suggestions for improvements are welcome][issues]!
+Este projeto [contém o que eu espero se tornar um melhor padrão de arquivo CHANGELOG][CHANGELOG] para todos projetos open source. Pode a comunidade open source aprender com seus erros e não agir como se os dez mandamentos foram escritos a muito tempo atrás e estavam inteiramente certos? Tudo bem. Então por favor dê um olhada e lembre que [discussões e sugestões de melhorias são bem-vindas][issues]!
 
-### What should the change log file be named?
-Well, if you can’t tell from the example above, `CHANGELOG.md` is the
-best convention so far.
+### Qual deve ser o nome do arquivo *change log*?
+Bom, se você não notou no exemplo acima, `CHANGELOG.md` é a melhor padrão até agora.
 
-Some projects also use `HISTORY.txt`, `HISTORY.md`, `History.md`, `NEWS.txt`,
-`NEWS.md`, `News.txt`, `RELEASES.txt`, `RELEASE.md`, `releases.md`, etc.
+Alguns outros projetos também utilizam `HISTORY.txt`, `HISTORY.md`, `History.md`, `NEWS.txt`, `NEWS.md`, `News.txt`, `RELEASES.txt`, `RELEASE.md`, `releases.md`, etc.
 
-It’s a mess. All these names only makes it harder for people to find it.
+É uma bagunça. Todos esses nome só dificultam as pessoas acharem.
 
-### Why can’t people just use a `git log` diff?
-Because log diffs are full of noise. Can we really expect every single
-commit in an open source project to be meaningful and self-explanatory?
-That seems like a pipe dream.
+### Por quê as pessoas não podem simplesmente utilizar `git log`?
+Porque logs de commit são cheios de distrações. Podemos realmente esperar que cada commit do projeto seja significativo e auto-explicativo? Só em sonho.
 
-### Can change logs be automatically parsed?
-It’s difficult, because people follow wildly different formats and file names.
+### Podem os *change logs* ser automaticamente interpretados?
+É difícil, por que as pessoas seguem formatos e nomes de arquivos radicalmente diferentes.
 
-[Vandamme][vandamme] is a Ruby gem
-created by the [Gemnasium][gemnasium] team and which parses
-many (but not all) open source project change logs.
+[Vandamme][vandamme] é uma gem criada pelo time [Gemnasium][gemnasium] que interpreta muitos (mas não todos) *change logs* de projetos open source.
 
 ### Why do you alternate between spelling it "CHANGELOG" and "change log"?
-"CHANGELOG" is the name of the file itself. It's a bit shouty but it's a
-historical convention followed by many open source projects. Other
-examples of similar files include [`README`](README.md), [`LICENSE`](LICENSE),
-and [`CONTRIBUTING`](CONTRIBUTING.md).
+"CHANGELOG" é o nome do arquivo em si. É um pouco chamativo mas é uma convenção histórica seguida por muitos projetos open source. Outros exemplos similares de arquivo incluem [`README`](README.md), [`LICENSE`](LICENSE), e [`CONTRIBUTING`](CONTRIBUTING.md).
 
-The uppercase naming (which in old operating systems made these files stick
-to the top) is used to draw attention to them. Since they're important
-metadata about the project, they could be useful to anyone intending to use
-or contribute to it, much like [open source project badges][shields].
+O nome em letras maiúsculas (o que em sistemas operacionais antigos faziam estes arquivos serem mantidos no topo) é utilizado para chamar atenção a eles. Já que eles são importante metadados sobre o projeto, eles podem ser úteis a qualquer um pretendendo usar ou contribuir com ele, assim como os [as *badges* de projeto open source][shields].
 
-When I refer to a "change log", I'm talking about the function of this
-file: to log changes.
+Quando eu me refiro a "*change log*", eu estou falando sobre a função deste arquivo: listar mudanças.
 
-### What about yanked releases?
-Yanked releases are versions that had to be pulled because of a serious
-bug or security issue. Often these versions don't even appear in change
-logs. They should. This is how you should display them:
+### E sobre as publicações removidas?
+Publicações removidas são versões que tiveram que ser removidas devido a um sério bug ou problema de segurança. Com frequência essas versões sequer aparecem em *change logs*. Deveriam. É assim que você deve exibi-las:
 
-`## 0.0.5 - 2014-12-13 [YANKED]`
+`## 0.0.5 - 2014-12-13 [REMOVIDO]`
 
-The `[YANKED]` tag is loud for a reason. It's important for people to
-notice it. Since it's surrounded by brackets it's also easier to parse
-programmatically.
+A tag `[REMOVIDO]` é chamativa por uma razão. É importante que as pessoas a notem. E já que é cercada por colchetes é mais fácil detectá-la programaticamente.
 
-### How can I contribute?
-This document is not the **truth**; it’s my carefully considered
-opinion, along with information and examples I gathered.
-Although I provide an actual [CHANGELOG][] on [the GitHub repo][gh],
-I have purposefully not created a proper *release* or clear list of rules
-to follow (as [SemVer.org][semver] does, for instance).
+### Como eu posso contribuir?
+Este documento não é **a verdade**; é minha cuidadosa opinião, junto com as informações e exemplos que reuni. Embora eu tenha providenciado um [CHANGELOG][] no [repositório no GitHub][gh], eu não criei de propósito uma lista clara de regras a serem seguidas (como o [SemVer.org][semver] faz, por exemplo).
 
-This is because I want our community to reach a consensus. I believe the
-discussion is as important as the end result.
+Fiz isso porque eu gostaria que nossa comunidade chegasse a um consenso. Eu acredito que a discussão é tão importante quanto o resultado final.
 
-So please [**pitch in**][gh].
+Então por favor [**entre em campo**][gh].
+
+### Isto é uma tradução
+
+*[Tradutor](https://github.com/tallesl) falando*.
+
+Isto é uma tradução de [keepachangelog.com][doc-original].
+
+Para contribuir com a discussão e a formulação do documento utilize o [repositório original][repo-original]. Para contribuir com a tradução utilize [este fork][repo-fork].
 
 [CHANGELOG]: ./CHANGELOG.md
 [gemnasium]: http://gemnasium.com
@@ -151,3 +111,7 @@ So please [**pitch in**][gh].
 [shields]: http://shields.io
 [thechangelog]: http://5by5.tv/changelog/127
 [vandamme]: https://github.com/tech-angels/vandamme/
+
+[doc-original]: http://keepachangelog.com/
+[repo-original]: https://github.com/olivierlacan/keep-a-changelog
+[repo-fork]:  https://github.com/tallesl/keep-a-changelog
