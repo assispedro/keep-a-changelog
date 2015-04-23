@@ -1,6 +1,6 @@
 # Mantenha um CHANGELOG
 
-## Não deixe seus amigos despejar logs git em CHANGELOGs™
+## Não deixe seus amigos despejar logs de commits em CHANGELOGs™
 
 ### O que é um *change log*?
 Um *change log* é um arquivo que contém uma lista selecionada, ordenada cronologicamente de mudanças significativas para cada versão de um projeto open source.
@@ -74,7 +74,7 @@ Porque logs de commit são cheios de distrações. Podemos realmente esperar que
 
 [Vandamme][vandamme] é uma gem criada pelo time [Gemnasium][gemnasium] que interpreta muitos (mas não todos) *change logs* de projetos open source.
 
-### Why do you alternate between spelling it "CHANGELOG" and "change log"?
+### Por que você alterna entre as grafias "CHANGELOG" e "change log"?
 "CHANGELOG" é o nome do arquivo em si. É um pouco chamativo mas é uma convenção histórica seguida por muitos projetos open source. Outros exemplos similares de arquivo incluem [`README`](README.md), [`LICENSE`](LICENSE), e [`CONTRIBUTING`](CONTRIBUTING.md).
 
 O nome em letras maiúsculas (o que em sistemas operacionais antigos faziam estes arquivos serem mantidos no topo) é utilizado para chamar atenção a eles. Já que eles são importante metadados sobre o projeto, eles podem ser úteis a qualquer um pretendendo usar ou contribuir com ele, assim como os [as *badges* de projeto open source][shields].
